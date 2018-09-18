@@ -1,0 +1,69 @@
+	/*This slider Animation*/
+	
+section{
+  width: 1000px;
+  height: 60px;
+  position: relative;
+  left: 10%;
+  top: 1em;cursor:pointer;
+  margin-left:0px;
+  overflow: hidden;
+ background:url(button); 
+}
+ 
+}
+
+
+section:hover article{
+animation-play-state:paused;
+}
+
+
+ article{ 
+  position: absolute;
+  left: 1000px;
+  
+  color: #e3e3e3;
+  width: 1000px;
+  height: 60px;
+ 
+  font: 1em sans-serif;
+  border-box: box-sizing;
+  padding-top:20px;
+ 
+}
+
+article:nth-of-type(1){
+  animation: slideIn 50s linear 0s infinite;
+}
+article:nth-of-type(2){
+  animation: slideIn 50s linear 5s infinite;
+}
+article:nth-of-type(3){
+  animation: slideIn 50s linear 10s infinite;
+}
+article:nth-of-type(4){
+  animation: slideIn 50s linear 15s infinite;
+}
+article:nth-of-type(5){
+  animation: slideIn 50s linear 20s infinite;
+}
+ article:nth-of-type(6){ 
+  animation: slideIn 50s linear 25s infinite;
+}
+article:nth-of-type(7){
+   animation: slideIn 50s linear 30s infinite;
+}
+@keyframes slideIn{
+    0% {left: 1000px;}
+  1% {left: 0;}
+  10% {left: 0;}
+  11% {left: -1000px;}
+  100%{left: -1000px;}
+
+
+}
+
+   
+
+
